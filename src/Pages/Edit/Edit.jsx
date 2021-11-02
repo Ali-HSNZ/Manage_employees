@@ -1,27 +1,14 @@
 import { useEffect, useState } from 'react';
 import { toast } from 'react-toastify';
-import Container from '../../Components/Loding/Loding';
 import getOneData from '../../http/get/getOneData';
 import putData from '../../http/putData/PutData';
 import Styles from './Edit.module.css'
 import { useFormik } from 'formik';
 import * as Yup from "yup"
-import InputCommon from '../../commons/inputCommon/InputCommon';
+import InputCommon from '../../common/inputCommon/InputCommon';
 // import { Link } from 'react-router-dom';
 
 
-const initialValues = {
-    FirstName: "",
-    LastName: "",
-    email: "",
-    phoneNumber: "",
-    birthDay: "",
-    codeMeli: "",
-    sabegheKar: "",
-    Duty: "",
-    shoglGhabli: "",
-    hoghogh: "",
-}
 
 
 const firstNameRegExp = /^[ آابپتثجچحخدذرزژسشصضطظعغفقکگلمنوهیئ]{3,15}$/
@@ -70,6 +57,22 @@ const inputCommonList={
 
 
 const Edit = (props) => {
+
+    const initialValues = {
+        FirstName: "",
+        LastName: "",
+        email: "",
+        phoneNumber: "",
+        birthDay: "",
+        codeMeli: "",
+        sabegheKar: "",
+        Duty: "",
+        shoglGhabli: "",
+        hoghogh: "",
+    }
+
+    
+    
     const id = props.match.params.id;
 
     const [userData , setUserData] = useState(null)
@@ -90,21 +93,17 @@ const Edit = (props) => {
     },[id])
 
 
-    const onSubmit = ()=>{
+    const onSubmit =async ()=>{
         try {
-            const putUser = async()=> {
                 await putData(id , userData)
                 toast.success(`مشخصات کارمند : ${prevUserData.FirstName} ${prevUserData.LastName} تغییر کرد`)
 
                 props.history.push("/")
             }
-            if(id){
-                putUser()
-            }
-        } catch (error) {alert(error)}
-            
-        
+        catch (error) {alert(error)}
     }
+
+    console.log(initialValues)
 
     const goBackHandler =()=> {
         const type = props.location.type;
@@ -126,6 +125,9 @@ const Edit = (props) => {
         enableReinitialize: true
     })
 
+    const changeHandler = (e)=> {
+        setUserData({...userData,[e.target.name] : e.target.value })
+    }
 
     return (  
         <form onSubmit={formik.handleSubmit}>
@@ -140,10 +142,10 @@ const Edit = (props) => {
 
             <div className={Styles.parent}>
                 <div className={Styles.inputsParent}>
-                    {inputCommonList.left.map((item , index)=> <InputCommon key={index} formik={formik} {...item}/>)}
+                    {inputCommonList.left.map((item , index)=> <InputCommon changeHandler={changeHandler} key={index} formik={formik} {...item}/>)}
                 </div>
                 <div className={Styles.inputsParent}>
-                    {inputCommonList.right.map((item , index)=> <InputCommon key={index} formik={formik} {...item}/>)}
+                    {inputCommonList.right.map((item , index)=> <InputCommon changeHandler={changeHandler} key={index} formik={formik} {...item}/>)}
                 </div>
             </div>
         </form>

@@ -4,7 +4,7 @@ import Styles from './AddUser.module.css'
 import { toast} from 'react-toastify';
 import {useFormik } from 'formik';
 import * as Yup from 'yup';
-import InputCommon from '../../commons/inputCommon/InputCommon'
+import InputCommon from '../../common/inputCommon/InputCommon'
 
 const initialValues = {
     FirstName: "",

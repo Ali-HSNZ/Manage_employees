@@ -29,24 +29,10 @@
       "avatar": "https://reqres.in/img/faces/10-image.jpg"
     },
     {
-      "id": 17,
-      "email": "michael.lawson@reqres.in",
-      "FirstName": "Michael",
-      "LastName": "Lawson",
-      "birthDay": "1375/05/06",
-      "codeMeli": "4954257731",
-      "sabegheKar": "3",
-      "phoneNumber": "09305478211",
-      "Duty": "مدیر گروه",
-      "shoglGhabli": "کارمند بانک",
-      "hoghogh": "3000000",
-      "avatar": "https://reqres.in/img/faces/7-image.jpg"
-    },
-    {
       "id": 18,
       "email": "lindsay.ferguson@reqres.in",
-      "FirstName": "Lindsay",
-      "LastName": "Ferguson",
+      "FirstName": "لیندسی",
+      "LastName": "فرگاسون",
       "birthDay": "1375/05/06",
       "codeMeli": "4954257731",
       "sabegheKar": "2",
@@ -181,19 +167,6 @@
       "shoglGhabli": "کارمند بانک",
       "hoghogh": "3000000",
       "avatar": "https://reqres.in/img/faces/11-image.jpg"
-    },
-    {
-      "email": "",
-      "FirstName": "",
-      "LastName": "",
-      "birthDay": "",
-      "codeMeli": "",
-      "sabegheKar": 0,
-      "phoneNumber": "",
-      "Duty": "",
-      "shoglGhabli": "",
-      "hoghogh": "",
-      "id": 29
     },
     {
       "FirstName": "احمدرضا",

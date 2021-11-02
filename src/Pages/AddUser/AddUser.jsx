@@ -82,10 +82,11 @@ const AddUser = (props) => {
             {name : "codeMeli" , text : "کد ملی" , type : "number" , placeholder : "گد ملی خود را وارد کنید"},
             {name : "sabegheKar" , text : "سابقه کار" , type : "number" , placeholder : "0-99"},
             {name : "Duty" , text : "مسئولیت" , type : "text" , placeholder : "مسئولیت کنونی خود را وارد کنید"},
-            {name : "shoglGhabli" , text : "شغل قبلی" , type : "number" , placeholder : "شغل قبلی خود را وارد کنید"},
+            {name : "shoglGhabli" , text : "شغل قبلی" , type : "text" , placeholder : "شغل قبلی خود را وارد کنید"},
             {name : "hoghogh" , text : "حقوق خود را وارد کنید" , type : "number" , placeholder : "100,000 - 1,000,000"},
         ]
     }
+
 
 
 
@@ -103,10 +104,10 @@ const AddUser = (props) => {
 
                 <div className={Styles.parent}>
                     <div className={Styles.inputsParent}>
-                        {inputCommonList.left.map((item , index)=> <InputCommon key={index} formik={formik} {...item}/>)}
+                        {inputCommonList.left.map((item , index)=> <InputCommon onChange={formik.handleChange} key={index} formik={formik} {...item}/>)}
                     </div>
                     <div className={Styles.inputsParent}>
-                        {inputCommonList.right.map((item , index)=> <InputCommon key={index} formik={formik} {...item}/>)}
+                        {inputCommonList.right.map((item , index)=> <InputCommon onChange={formik.handleChange} key={index} formik={formik} {...item}/>)}
                     </div>
                 </div>
 

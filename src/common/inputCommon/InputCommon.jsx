@@ -16,7 +16,7 @@ const InputCommon = ({formik,name,text,type,placeholder , changeHandler}) => {
                     value={formik.values[name]} 
                     name={name} 
                     type={type} 
-                    onChange={changeHandler} 
+                    onChange={changeHandler || formik.handleChange} 
                     placeholder={placeholder} 
                     className={`${Styles["input_"+name]}`}
                 />

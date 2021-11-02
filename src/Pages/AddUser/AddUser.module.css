@@ -1,0 +1,132 @@
+.header{
+    margin-top: 0px;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background-color: rgba(0, 0, 182, 0.068);
+    border-radius: 25px 25px 0 0;
+}
+.header p{
+    font-family: iransansweb;
+    font-weight: 700;
+}
+.headerSubmitBtn{
+    padding: 7px 30px;
+    border-radius: 10px;
+    background-color: rgb(0, 163, 0);
+    color: white;
+    border:none;
+    box-shadow: 0 0 3px 0 green;
+    font-family: iransansweb;
+    cursor: pointer;
+}
+.headerSubmitBtn:disabled{
+    background-color: rgba(70, 70, 70, 0.61);
+    box-shadow: unset;
+    cursor: not-allowed;
+}
+.headerGoBackBtn{
+    padding: 6px 30px;
+    border-radius: 10px;
+    background-color: transparent;
+    color: red;
+    border:1px solid red;
+
+    font-family: iransansweb;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+
+.parent{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 0px;
+  
+}
+
+.inputsParent{
+    width: 100%;
+    padding: 20px 20px 0 20px; 
+}
+.input_p_Parent{
+    margin-bottom: 49px;
+    position: relative;
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+ 
+}
+.input_p_Parent_row{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: auto;
+
+}
+.input_p_Parent_row p{
+    font-family: "iransansweb";
+}
+.input_p_Parent_row input{
+    height: 35px;
+    margin-right: 7px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    outline: none;
+    padding: 0 10px;
+    font-family: 'iransansweb';
+    font-weight: bold;
+}
+.input_codeMeli{
+    width: 170px;
+    text-align: center;
+    font-size: 13px;
+}
+.input_sabegheKar{
+    width: 70px;
+    text-align: center;
+}
+.input_masOliat{
+    width: 160px;
+}
+.input_shoghlGabli{
+    width: 270px;
+}
+.input_hoghogh{
+    width: 130px;
+    text-align: center;
+}
+.input_name{
+    width: 230px;
+}
+.input_lastName{
+    width: 300px;
+}
+.input_email{
+    width: 350px;
+}
+.input_phone{
+    width: 200px;
+    text-align: center;
+}
+.input_birthDay{
+    width: 150px;
+    text-align: center;
+}
+.error{
+    color: red;
+    font-family: 'iranyekanweb',' Calibri (Body)';
+    width: 100%;
+    position: absolute;
+    font-size: 15px;
+    bottom: -30px;
+}

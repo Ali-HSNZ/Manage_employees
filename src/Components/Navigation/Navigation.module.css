@@ -1,0 +1,117 @@
+.navigation{
+
+    position: relative;
+    top: 80px;
+    border-radius: 20px;
+    width: 1400px;
+    height: 70px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logoParent{
+    width: 150px;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logoParent img{
+    width: 100%;
+    height: 100%;
+}
+
+.navParent{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.nav{
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    font-family: iranyekanweb;
+}
+.nav a{
+    margin-left: 30px;
+    font-size: 14px;
+    text-decoration: none;
+}
+.inputParent{
+
+    height: auto;
+    margin-left: 30px;
+    width: auto;
+    display: flex;
+    align-items: center;
+}
+.inputParent input{
+    width: 300px;
+    height: 35px;
+    border:1px solid gray;
+    border-radius: 7px;
+    outline: none;
+    padding: 0 15px;
+    font-family: iransansweb;
+    font-size: 13px;
+    
+}
+.inputParent input:focus{
+    box-shadow: 0 0 1px 0 blue;
+}
+
+.iconParentStyle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+}
+.iconParentStyle{
+    margin:0 0 0 5px;
+    
+}
+.iconParentStyle_active{
+    color: blue;
+    font-weight: bold;
+}
+
+.inputParent button a {
+    padding: 0 10px;
+    text-decoration: none;
+    color: blue;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: iranyekanweb;
+    color: rgb(0, 0, 0);
+}
+.searchBtn{
+    width: 100px;
+    height: 35px;
+    background-color: rgba(0, 0, 255, 0.062);
+    box-shadow: 0 0 3px 0 rgba(0, 0, 126, 0.274);
+    border: 1px solid blue;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+    margin-right: 10px;
+}
+.searchBtn:hover{
+    box-shadow: unset
+}
+.inputParent a {
+    padding: 0 10px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    font-size: 14px;
+    font-family: iranyekanweb;
+}
+
+
+
+
+
+

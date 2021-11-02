@@ -1,0 +1,79 @@
+
+.input_p_Parent{
+    margin-bottom: 49px;
+    position: relative;
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+ 
+}
+.input_p_Parent_row{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: auto;
+
+}
+.input_p_Parent_row p{
+    font-family: "iransansweb";
+}
+.input_p_Parent_row input{
+    height: 35px;
+    margin-right: 7px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    outline: none;
+    padding: 0 10px;
+    font-family: 'iransansweb';
+    font-weight: bold;
+}
+.input_codeMeli{
+    width: 170px;
+    text-align: center;
+    font-size: 13px;
+}
+.input_sabegheKar{
+    width: 70px;
+    text-align: center;
+}
+.input_masOliat{
+    width: 160px;
+}
+.input_shoghlGabli{
+    width: 270px;
+}
+.input_hoghogh{
+    width: 170px;
+    text-align: center;
+}
+
+.input_FirstName{
+    width: 230px;
+}
+.input_LastName{
+    width: 300px;
+}
+.input_email{
+    width: 350px;
+}
+.input_phoneNumber{
+    width: 200px;
+    text-align: center;
+}
+.input_birthDay{
+    width: 150px;
+    text-align: center;
+}
+.error{
+    color: red;
+    font-family: 'iranyekanweb',' Calibri (Body)';
+    width: 100%;
+    position: absolute;
+    font-size: 15px;
+    bottom: -30px;
+}

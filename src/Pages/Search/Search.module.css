@@ -1,0 +1,97 @@
+.parent{
+
+    width: 100%;
+    height:96%;
+    padding: 0 20px 0 20px;
+    overflow-y:scroll ;
+}
+.item{
+    background-color: rgba(0, 0, 148, 0.055);
+
+    width: 100%;
+    height: 170px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+.imageParent{
+    width: 200px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.textParent{
+    width: 100%;
+    padding: 0 40px 0 40px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+.textGroup{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    
+}
+.textGroup p{
+    font-family: iransansweb;
+    font-size: 14px;
+
+
+}
+.parentBtn{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.deleteBtn{
+    padding: 7px 35px;
+    border-radius: 10px;
+    font-family: iransansweb;
+    cursor: pointer;
+    color : red;
+    background-color: transparent;
+    border: 1px solid red;
+
+}
+.editBtn{
+    padding: 7px 35px;
+    border-radius: 10px;
+    font-family: iransansweb;
+    cursor: pointer;
+    color : rgb(7, 82, 0);
+    background-color: rgba(0, 255, 0, 0.11);
+    border: 1px solid rgb(0, 150, 25);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.NoUser_parent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(255, 0, 0, 0.13);
+    padding: 20px 0;
+    font-family: iransansweb;
+    border-radius: 10px;
+}
+.NoUser_parent a{
+    text-decoration: none;
+    margin-right: 20px;
+    background-color: rgba(13, 0, 255, 0.089);
+    border-radius: 10px;
+    padding: 8px 15px;
+}

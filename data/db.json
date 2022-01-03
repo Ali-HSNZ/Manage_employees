@@ -14,20 +14,7 @@
       "hoghogh": "3000000",
       "avatar": "https://reqres.in/img/faces/9-image.jpg"
     },
-    {
-      "id": 13,
-      "email": "byron.fields@reqres.in",
-      "FirstName": "Byron",
-      "LastName": "Fields",
-      "birthDay": "1375/05/06",
-      "codeMeli": "4954257731",
-      "sabegheKar": "2",
-      "phoneNumber": "09305478211",
-      "Duty": "مدیر گروه",
-      "shoglGhabli": "کارمند بانک",
-      "hoghogh": "3000000",
-      "avatar": "https://reqres.in/img/faces/10-image.jpg"
-    },
+    
     {
       "id": 18,
       "email": "lindsay.ferguson@reqres.in",
